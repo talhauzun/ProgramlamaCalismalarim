@@ -9,16 +9,16 @@ namespace delegateKullanimi
         {
             Console.WriteLine("Hello World!");
 
-            //ilkDelegetim ilk = new ilkDelegetim(myMetot);
-            //ilk += new ilkDelegetim(topla);
+            ilkDelegetim ilk = new ilkDelegetim(myMetot);
+            ilk += new ilkDelegetim(topla);
 
 
-            ///*    ilkDelegetim ilk = (test) => { Console.WriteLine(test); };
-            //    ilk += (test) => { Console.WriteLine(test); };
-            //    ilk += (test) => { Console.WriteLine(test); };*/
+            /*    ilkDelegetim ilk = (test) => { Console.WriteLine(test); };
+                ilk += (test) => { Console.WriteLine(test); };
+                ilk += (test) => { Console.WriteLine(test); };*/
 
-            //Console.WriteLine(ilk.Method.Name);
-            //ilk(10);
+            Console.WriteLine(ilk.Method.Name);
+            ilk(10);
 
 
 
@@ -51,31 +51,6 @@ namespace delegateKullanimi
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         static void myMetot(int sayi)
         {
             Console.WriteLine(sayi + "--------------");
@@ -84,7 +59,6 @@ namespace delegateKullanimi
         {
             Console.WriteLine(sayi + "-++++++++++++++++++++");
         }
-
 
         public delegate void MyDelegate(string msg);
 
